@@ -4,6 +4,9 @@ import { MdOutlineRemoveRedEye } from "react-icons/md";
 
 function Card() {
   const { t } = useTranslation();
+  const buttonStyle =
+    "bg-accentDarker flex min-w-[120px] cursor-pointer items-center justify-center rounded-full py-2 text-white transition-opacity hover:opacity-80";
+
   return (
     <div className="h-[520px] w-[320px] overflow-hidden rounded-2xl bg-neutral-900 shadow-lg">
       <div className="h-[200px] border-b border-accent bg-[url('/images/marv.jpg')] bg-cover"></div>
@@ -21,14 +24,14 @@ function Card() {
         </div>
 
         <div className="flex justify-center gap-x-4 py-2">
-          <button className="bg-accentDarker flex min-w-[120px] items-center justify-center rounded-full py-2 text-white">
+          <a className={`${buttonStyle}`}>
             <FaGithub size={"24"} className="mr-2" />
             Github
-          </button>
+          </a>
 
-          <button className="bg-accentDarker flex min-w-[120px] items-center justify-center rounded-full py-2 text-white">
+          <a className={`${buttonStyle}`}>
             <MdOutlineRemoveRedEye size={"24"} className="mr-2" /> Demo
-          </button>
+          </a>
         </div>
       </div>
     </div>
