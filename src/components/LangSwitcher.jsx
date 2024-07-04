@@ -10,7 +10,7 @@ function LangageSwitcher() {
     "py-2 px-6 pointer mr-2 rounded-full my-2 text-xs hover:bg-accentDarker transition-colors";
 
   return (
-    <div className="flex justify-end">
+    <div className="mr-2 flex justify-end">
       <div className="flex text-white">
         <div>
           <button

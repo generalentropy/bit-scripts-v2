@@ -9,7 +9,9 @@ function Card() {
 
   return (
     <div className="h-[520px] w-[320px] overflow-hidden rounded-2xl bg-neutral-900 shadow-lg">
-      <div className="h-[200px] border-b border-accent bg-[url('/images/marv.jpg')] bg-cover"></div>
+      <div
+        className={`h-[200px] border-b border-accent bg-[url('/images/marv.jpg')] bg-cover`}
+      ></div>
       <div className="flex h-[calc(100%-200px)] flex-col px-4 py-4">
         <div className="text-center text-2xl font-bold text-neutral-200">
           Marv
@@ -25,7 +27,7 @@ function Card() {
 
         <div className="flex justify-center gap-x-4 py-2">
           <a className={`${buttonStyle}`}>
-            <FaGithub size={"24"} className="mr-2" />
+            <FaGithub size={"20"} className="mr-2" />
             Github
           </a>
 
