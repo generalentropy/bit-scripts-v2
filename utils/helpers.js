@@ -20,7 +20,7 @@ export const fetchReposData = async (orgName) => {
   }
 };
 
-export const getDicordGuildInfo = async (guildId) => {
+export const getDiscordGuildInfo = async (guildId) => {
   if (!guildId) {
     console.error("Un ID de guilde est nécessaire");
     return null;

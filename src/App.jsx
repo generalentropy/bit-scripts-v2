@@ -1,7 +1,11 @@
+import { GUILDID } from "../config/globals";
+import { getDiscordGuildInfo } from "../utils/helpers";
 import CardsWrapper from "./components/CardsWrapper";
 import Header from "./components/Header";
 import Info from "./components/Info";
 import LangageSwitcher from "./components/LangSwitcher";
+
+getDiscordGuildInfo(GUILDID);
 
 function App() {
   // useEffect(() => {
