@@ -1,24 +1,27 @@
 import { useTranslation } from "react-i18next";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
+import { BASE_IMG_PATH, DEFAULT_IMG_COVER } from "../../config/globals";
 
-function Card() {
+function Card({ imgName = DEFAULT_IMG_COVER, title = "No name" }) {
   const { t } = useTranslation();
+
   const buttonStyle =
     "bg-accentDarker flex min-w-[120px] cursor-pointer items-center justify-center rounded-full py-2 text-white transition-opacity hover:opacity-80";
 
   return (
-    <div className="h-[520px] w-[320px] overflow-hidden rounded-2xl bg-neutral-900 shadow-lg">
+    <div className="h-[520px] w-[330px] overflow-hidden rounded-2xl bg-neutral-900 shadow-lg">
       <div
-        className={`h-[200px] border-b border-accent bg-[url('/images/marv.jpg')] bg-cover`}
+        className={`h-[200px] border-b border-accent bg-cover`}
+        style={{ backgroundImage: `url(${BASE_IMG_PATH}${imgName})` }}
       ></div>
       <div className="flex h-[calc(100%-200px)] flex-col px-4 py-4">
         <div className="text-center text-2xl font-bold text-neutral-200">
-          Marv
+          {title}
         </div>
 
         <div className="h-full max-h-[180px] overflow-hidden overflow-y-auto text-ellipsis py-4 text-sm text-neutral-200">
-          {t("marv")}
+          {t(`marv.description`)}
         </div>
 
         <div className="py-4 text-center italic text-neutral-300">

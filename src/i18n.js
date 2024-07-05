@@ -9,19 +9,26 @@ i18n
     resources: {
       en: {
         translation: {
+          marv: {
+            description:
+              "A Discord bot in NodeJS that uses ChatGPT and a speech synthesis and recognition system, allowing interaction with the bot through voice commands.",
+          },
           info: "Our projects",
           baseline: "Software & Script Development",
           discord: "Join our Discord",
-          marv: "A Discord bot in NodeJS that uses ChatGPT and a speech synthesis and recognition system, allowing interaction with the bot through voice commands.",
           devby: "Developed by",
         },
       },
       fr: {
         translation: {
+          marv: {
+            description:
+              "Un bot Discord en NodeJS qui utilise chatGPT et un système de synthèse et de reconnaissance vocale permettant d’intéragir avec le bot grâce à la voix.",
+          },
+
           info: "Nos projets",
           baseline: "Développement de softs & scripts",
           discord: "Rejoignez notre Discord",
-          marv: "Un bot Discord en NodeJS qui utilise chatGPT et un système de synthèse et de reconnaissance vocale permettant d’intéragir avec le bot grâce à la voix.",
           devby: "Developpé par",
         },
       },

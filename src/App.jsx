@@ -1,16 +1,15 @@
-import { GUILDID } from "../config/globals";
-import { getDiscordGuildInfo } from "../utils/helpers";
+import { useEffect } from "react";
+import { ORGNAME } from "../config/globals";
+import { fetchReposData } from "../utils/helpers";
 import CardsWrapper from "./components/CardsWrapper";
 import Header from "./components/Header";
 import Info from "./components/Info";
 import LangageSwitcher from "./components/LangSwitcher";
 
-getDiscordGuildInfo(GUILDID);
-
 function App() {
-  // useEffect(() => {
-  //   fetchReposData(ORGNAME);
-  // }, []);
+  useEffect(() => {
+    fetchReposData(ORGNAME);
+  }, []);
 
   return (
     <div className="min-h-screen bg-neutral-800">
