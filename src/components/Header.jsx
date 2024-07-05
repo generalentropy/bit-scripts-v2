@@ -1,29 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import { BsDiscord } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
-import i18n from "../i18n";
-
-const add = () => {
-  i18n.addResourceBundle(
-    "es",
-    "translation",
-    {
-      marv: {
-        title: "Marv",
-        description:
-          "Un bot de Discord en NodeJS que usa ChatGPT y un sistema de síntesis y reconocimiento de voz, lo que permite interactuar con el bot a través de comandos de voz.",
-      },
-      info: "Nuestros proyectos",
-      baseline: "Desarrollo de software y scripts",
-      discord: "Únete a nuestro Discord",
-
-      devby: "Desarrollado por",
-    },
-    false,
-    true,
-  );
-};
-add();
 
 function Header() {
   const { t } = useTranslation();

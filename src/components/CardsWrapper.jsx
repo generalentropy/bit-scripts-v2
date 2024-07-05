@@ -1,17 +1,23 @@
 import Card from "./Card";
+import { cardsData } from "../../data/cardsData";
 
 function CardsWrapper() {
   return (
     <div className="flex items-center justify-center">
       <div className="flex max-w-[1280px] flex-wrap justify-center gap-8 p-8">
-        <Card imgName="matrix.jpg" />
-        <Card imgName="marv.jpg" />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {cardsData.map((card, i) => {
+          console.log(card);
+          return (
+            <Card
+              title={card.title}
+              imgName={card.imageCover}
+              key={i}
+              translationKey={card.project}
+              demoUrl={card.demo}
+              author={card.author}
+            />
+          );
+        })}
       </div>
     </div>
   );

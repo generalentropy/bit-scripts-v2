@@ -64,3 +64,10 @@ export const getDicordInviteInfo = async (inviteCode) => {
     return null;
   }
 };
+
+export const normalizeLang = (lang) => {
+  if (typeof lang === "string" && lang.includes("-")) {
+    return lang.split("-")[0];
+  }
+  return lang;
+};

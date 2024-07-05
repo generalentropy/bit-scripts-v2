@@ -3,7 +3,13 @@ import { FaGithub } from "react-icons/fa";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { BASE_IMG_PATH, DEFAULT_IMG_COVER } from "../../config/globals";
 
-function Card({ imgName = DEFAULT_IMG_COVER, title = "No name" }) {
+function Card({
+  imgName = DEFAULT_IMG_COVER,
+  title = "No name",
+  translationKey,
+  demoUrl,
+  author,
+}) {
   const { t } = useTranslation();
 
   const buttonStyle =
@@ -21,11 +27,11 @@ function Card({ imgName = DEFAULT_IMG_COVER, title = "No name" }) {
         </div>
 
         <div className="h-full max-h-[180px] overflow-hidden overflow-y-auto text-ellipsis py-4 text-sm text-neutral-200">
-          {t(`marv.description`)}
+          {t(`app.card:${translationKey}.description`)}
         </div>
 
         <div className="py-4 text-center italic text-neutral-300">
-          {t("devby")} <span className="font-bold">Paul</span>
+          {t("devby")} <span className="font-bold">{author}</span>
         </div>
 
         <div className="flex justify-center gap-x-4 py-2">
@@ -34,7 +40,7 @@ function Card({ imgName = DEFAULT_IMG_COVER, title = "No name" }) {
             Github
           </a>
 
-          <a className={`${buttonStyle}`}>
+          <a className={`${buttonStyle}`} href={demoUrl}>
             <MdOutlineRemoveRedEye size={"24"} className="mr-2" /> Demo
           </a>
         </div>

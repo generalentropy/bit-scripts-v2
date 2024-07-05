@@ -1,6 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
+import { cardsData } from "../data/cardsData";
 
 i18n
   .use(LanguageDetector)
@@ -9,10 +10,6 @@ i18n
     resources: {
       en: {
         translation: {
-          marv: {
-            description:
-              "A Discord bot in NodeJS that uses ChatGPT and a speech synthesis and recognition system, allowing interaction with the bot through voice commands.",
-          },
           info: "Our projects",
           baseline: "Software & Script Development",
           discord: "Join our Discord",
@@ -21,15 +18,19 @@ i18n
       },
       fr: {
         translation: {
-          marv: {
-            description:
-              "Un bot Discord en NodeJS qui utilise chatGPT et un système de synthèse et de reconnaissance vocale permettant d’intéragir avec le bot grâce à la voix.",
-          },
-
           info: "Nos projets",
           baseline: "Développement de softs & scripts",
           discord: "Rejoignez notre Discord",
           devby: "Developpé par",
+        },
+      },
+
+      es: {
+        translation: {
+          info: "Nuestros proyectos",
+          baseline: "Desarrollo de software y scripts",
+          discord: "Únete a nuestro Discord",
+          devby: "Desarrollado por",
         },
       },
     },
@@ -39,5 +40,29 @@ i18n
       escapeValue: false,
     },
   });
+
+function fillTranslations(cardsData) {
+  console.log("loading translations...");
+  cardsData.forEach((card) => {
+    card.translations.forEach((translation) => {
+      const { lang, description } = translation;
+      i18n.addResourceBundle(
+        lang,
+        "app.card",
+        {
+          [card.project]: {
+            description,
+          },
+        },
+        true,
+        true,
+      );
+    });
+  });
+}
+
+fillTranslations(cardsData);
+
+console.log(i18n.getResourceBundle("en", "app.card"));
 
 export default i18n;
