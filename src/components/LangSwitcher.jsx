@@ -11,7 +11,7 @@ function LangageSwitcher() {
     "py-2 px-6 pointer rounded-full my-2 text-xs hover:bg-accentDarker transition-colors ";
 
   return (
-    <div className="flex justify-center sm:justify-end">
+    <div className="flex justify-center pr-4 pt-2 sm:justify-end sm:pt-4">
       <div className="flex justify-center text-white">
         <div className="flex gap-2 sm:gap-4">
           <button

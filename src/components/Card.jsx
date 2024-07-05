@@ -39,7 +39,7 @@ function Card({
           {githubProjectUrl && (
             <a className={`${buttonStyle}`} href={githubProjectUrl}>
               <FaGithub size={"20"} className="mr-2" />
-              Github
+              GitHub
             </a>
           )}
 
