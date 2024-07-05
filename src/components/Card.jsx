@@ -27,7 +27,7 @@ function Card({
           {title}
         </div>
 
-        <div className="h-full max-h-[180px] overflow-hidden overflow-y-auto text-ellipsis py-4 text-sm text-neutral-200">
+        <div className="h-full max-h-[200px] overflow-hidden text-ellipsis py-4 text-sm text-neutral-200">
           {t(`app.card:${translationKey}.description`)}
         </div>
 

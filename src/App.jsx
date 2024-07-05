@@ -1,25 +1,19 @@
-import { useEffect } from "react";
-// import { ORGNAME } from "../config/globals";
-// import { fetchReposData } from "../utils/helpers";
 import CardsWrapper from "./components/CardsWrapper";
 import Header from "./components/Header";
 import Info from "./components/Info";
 import LangageSwitcher from "./components/LangSwitcher";
+import GlobalProvider from "../context/GlobalProvider";
 
 function App() {
-  useEffect(() => {
-    // fetchReposData(ORGNAME);
-  }, []);
-
-  console.log('"render app');
-
   return (
-    <div className="min-h-screen overflow-x-hidden bg-neutral-800">
-      <Header />
-      <LangageSwitcher />
-      <Info />
-      <CardsWrapper />
-    </div>
+    <GlobalProvider>
+      <div className="min-h-screen overflow-x-hidden bg-neutral-800">
+        <Header />
+        <LangageSwitcher />
+        <Info />
+        <CardsWrapper />
+      </div>
+    </GlobalProvider>
   );
 }
 

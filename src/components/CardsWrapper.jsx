@@ -6,7 +6,6 @@ function CardsWrapper() {
     <div className="flex items-center justify-center">
       <div className="flex max-w-[1280px] flex-wrap justify-center gap-8 p-8">
         {cardsData.map((card, i) => {
-          console.log(card);
           return (
             <Card
               title={card.title}

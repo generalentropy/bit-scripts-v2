@@ -72,6 +72,31 @@ export const cardsData = [
     ],
   },
   {
+    project: "bitguardian",
+    imageCover: "bitguardian.jpg",
+    title: "BitGuardian",
+    author: "Moon",
+    github: "https://github.com/Bit-Scripts/BitGuardian",
+    demo: "",
+    translations: [
+      {
+        lang: "en",
+        description:
+          "BitGuardian is a Discord moderation bot that assigns a role to new members and logs user messages. By facilitating server management, it enhances the user experience and offers extensible support for custom features.",
+      },
+      {
+        lang: "fr",
+        description:
+          "BitGuardian est un bot Discord de modération qui attribue un rôle aux nouveaux membres et enregistre les messages utilisateur. Facilitant la gestion des serveurs, il améliore l'expérience utilisateur et offre un support extensible pour des fonctionnalités personnalisées.",
+      },
+      {
+        lang: "es",
+        description:
+          "BitGuardian es un bot de moderación de Discord que asigna un rol a los nuevos miembros y registra los mensajes de los usuarios. Al facilitar la gestión de servidores, mejora la experiencia del usuario y ofrece soporte extensible para funciones personalizadas.",
+      },
+    ],
+  },
+  {
     project: "lowfuel",
     imageCover: "lowfuel.jpg",
     title: "Low-Fuel",
