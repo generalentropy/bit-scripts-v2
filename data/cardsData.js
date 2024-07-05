@@ -60,17 +60,17 @@ export const cardsData = [
       {
         lang: "en",
         description:
-          "Real-time capture from your WebCam to ASCII Art rendering in a Qt6 window and to a virtual webcam, all in Python.",
+          "Real-time capture from your WebCam to ASCII Art rendering in a Qt6 window and to a virtual webcam.",
       },
       {
         lang: "fr",
         description:
-          "Capture de votre WebCam en temps réel vers un rendu ASCII Art dans une fenêtre Qt6 et vers une webcam virtuelle, le tout en Python.",
+          "Capture de votre WebCam en temps réel vers un rendu ASCII Art dans une fenêtre Qt6 et vers une webcam virtuelle.",
       },
       {
         lang: "es",
         description:
-          "Captura en tiempo real desde tu WebCam a una representación en ASCII Art en una ventana Qt6 y a una webcam virtual, todo en Python.",
+          "Captura en tiempo real desde tu WebCam a una representación en ASCII Art en una ventana Qt6 y a una webcam virtual.",
       },
     ],
   },
@@ -123,6 +123,32 @@ export const cardsData = [
         lang: "es",
         description:
           "Conocer los lugares donde los precios de los combustibles son los más baratos (utilizando datos del gobierno) y enviar alertas por SMS si los precios de los combustibles bajan",
+      },
+    ],
+  },
+  {
+    githubRepoName: "Rsscript",
+    project: "rsscript",
+    imageCover: "rsscript.jpg",
+    title: "Rsscript",
+    author: "Red Moon",
+    github: "https://github.com/Bit-Scripts/Rsscript",
+    demo: "",
+    translations: [
+      {
+        lang: "en",
+        description:
+          "Rsscript is an open source project of a Discord bot whose purpose is to read RSS feeds and transmit them in a specific Discord channel.",
+      },
+      {
+        lang: "fr",
+        description:
+          "Rsscript est un projet open source de bot Discord qui a pour but de lire les flux RSS et de les transmettre dans un salon Discord spécifique.",
+      },
+      {
+        lang: "es",
+        description:
+          "Rsscript es un proyecto de código abierto de un bot de Discord cuyo objetivo es leer los feeds RSS y transmitirlos en un canal de Discord específico.",
       },
     ],
   },
