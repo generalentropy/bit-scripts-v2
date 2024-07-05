@@ -71,3 +71,10 @@ export const normalizeLang = (lang) => {
   }
   return lang;
 };
+
+export function convertDate(dateStr) {
+  if (!dateStr) return null;
+  const dateObj = new Date(dateStr);
+  const formattedDate = `${String(dateObj.getDate()).padStart(2, "0")}/${String(dateObj.getMonth() + 1).padStart(2, "0")}/${dateObj.getFullYear()}`;
+  return formattedDate;
+}

@@ -15,6 +15,7 @@ function CardsWrapper() {
               demoUrl={card.demo}
               author={card.author}
               githubProjectUrl={card.github}
+              githubRepoName={card.githubRepoName}
             />
           );
         })}

@@ -6,11 +6,12 @@
 
 /**
  * @typedef {Object} CardsData
- * @property {string} project - REQUIS - "project" devient la clé unique de l'objet qui contient toutes les infos et traductions relatives à la carte et qui seront poussées à i18n lors de l'initialisation.
+ * @property {string} githubRepoName - !Doit correspondre exactement au nom du repo
+ * @property {string} project - REQUIS - "project" devient la clé unique de l'objet qui contient toutes les infos et traductions relatives à la carte et qui seront poussées lors de l'initialisation.
  * @property {string} imageCover - Nom du fichier image avec extension.
  * @property {string} title - Nom du projet affiché sur la carte.
  * @property {string} author - Auteur du projet affiché sur la carte.
- * @property {string} github - Nom exact du repo pour pouvoir afficher les infos du projet.
+ * @property {string} github - lien vers le repo
  * @property {string} demo - URL de démo du projet.
  * @property {Translation[]} translations - Description du projet dans toutes les langues souhaitées. Dans le cas où vous ne fournissez qu'une langue, ce doit être l'anglais.
  */
@@ -22,6 +23,7 @@
 
 export const cardsData = [
   {
+    githubRepoName: "Marv",
     project: "marv",
     imageCover: "marv.jpg",
     title: "Marv",
@@ -47,11 +49,12 @@ export const cardsData = [
     ],
   },
   {
+    githubRepoName: "Matrix",
     project: "matrix",
     imageCover: "matrix.jpg",
     title: "Matrix",
     author: "Paul",
-    github: "Matrix",
+    github: "https://github.com/Bit-Scripts/Matrix",
     demo: "",
     translations: [
       {
@@ -72,6 +75,7 @@ export const cardsData = [
     ],
   },
   {
+    githubRepoName: "BitGuardian",
     project: "bitguardian",
     imageCover: "bitguardian.jpg",
     title: "BitGuardian",
@@ -97,6 +101,7 @@ export const cardsData = [
     ],
   },
   {
+    githubRepoName: "Low-Fuel",
     project: "lowfuel",
     imageCover: "lowfuel.jpg",
     title: "Low-Fuel",
