@@ -11,8 +11,10 @@ function App() {
     // fetchReposData(ORGNAME);
   }, []);
 
+  console.log('"render app');
+
   return (
-    <div className="min-h-screen bg-neutral-800">
+    <div className="min-h-screen overflow-x-hidden bg-neutral-800">
       <Header />
       <LangageSwitcher />
       <Info />

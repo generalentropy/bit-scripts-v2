@@ -8,12 +8,12 @@ function LangageSwitcher() {
   const [activeLang, setActiveLang] = useState(normalizeLang(currentLanguage));
 
   const btnStyleBase =
-    "py-2 px-6 pointer mr-2 rounded-full my-2 text-xs hover:bg-accentDarker transition-colors";
+    "py-2 px-6 pointer rounded-full my-2 text-xs hover:bg-accentDarker transition-colors ";
 
   return (
-    <div className="mr-2 flex justify-end">
-      <div className="flex text-white">
-        <div>
+    <div className="flex justify-center sm:justify-end">
+      <div className="flex justify-center text-white">
+        <div className="flex gap-2 sm:gap-4">
           <button
             className={`${btnStyleBase} ${activeLang === "en" ? "bg-accentDarker" : "bg-neutral-700"}`}
             onClick={() => {

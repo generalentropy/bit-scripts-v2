@@ -42,7 +42,7 @@ i18n
   });
 
 function fillTranslations(cardsData) {
-  console.log("loading translations...");
+  console.log("Populate translations object...");
   cardsData.forEach((card) => {
     card.translations.forEach((translation) => {
       const { lang, description } = translation;
@@ -62,7 +62,8 @@ function fillTranslations(cardsData) {
 }
 
 fillTranslations(cardsData);
+console.log("Translations injected👍");
 
-console.log(i18n.getResourceBundle("en", "app.card"));
+// console.log(i18n.getResourceBundle("en", "app.card"));
 
 export default i18n;

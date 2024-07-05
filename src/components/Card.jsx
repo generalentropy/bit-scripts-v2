@@ -9,6 +9,7 @@ function Card({
   translationKey,
   demoUrl,
   author,
+  githubProjectUrl,
 }) {
   const { t } = useTranslation();
 
@@ -35,14 +36,18 @@ function Card({
         </div>
 
         <div className="flex justify-center gap-x-4 py-2">
-          <a className={`${buttonStyle}`}>
-            <FaGithub size={"20"} className="mr-2" />
-            Github
-          </a>
+          {githubProjectUrl && (
+            <a className={`${buttonStyle}`} href={githubProjectUrl}>
+              <FaGithub size={"20"} className="mr-2" />
+              Github
+            </a>
+          )}
 
-          <a className={`${buttonStyle}`} href={demoUrl}>
-            <MdOutlineRemoveRedEye size={"24"} className="mr-2" /> Demo
-          </a>
+          {demoUrl && (
+            <a className={`${buttonStyle}`} href={demoUrl}>
+              <MdOutlineRemoveRedEye size={"24"} className="mr-2" /> Demo
+            </a>
+          )}
         </div>
       </div>
     </div>

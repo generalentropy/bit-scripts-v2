@@ -15,6 +15,7 @@ function CardsWrapper() {
               translationKey={card.project}
               demoUrl={card.demo}
               author={card.author}
+              githubProjectUrl={card.github}
             />
           );
         })}

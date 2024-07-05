@@ -71,4 +71,29 @@ export const cardsData = [
       },
     ],
   },
+  {
+    project: "lowfuel",
+    imageCover: "lowfuel.jpg",
+    title: "Low-Fuel",
+    author: "Paul",
+    github: "https://github.com/Bit-Scripts/Low-Fuel",
+    demo: "",
+    translations: [
+      {
+        lang: "en",
+        description:
+          "Knowing the places where fuel prices are the cheapest (using government data) and sending SMS alerts if fuel prices drop",
+      },
+      {
+        lang: "fr",
+        description:
+          "Connaître les lieux où les prix des carburants sont les moins chers (utilisation des données gouvernementales) et envoi de SMS si le prix du carburant baisse",
+      },
+      {
+        lang: "es",
+        description:
+          "Conocer los lugares donde los precios de los combustibles son los más baratos (utilizando datos del gobierno) y enviar alertas por SMS si los precios de los combustibles bajan",
+      },
+    ],
+  },
 ];
