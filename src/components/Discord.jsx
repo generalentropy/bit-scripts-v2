@@ -15,7 +15,7 @@ function DiscordWidget() {
 
   return (
     <div className="flex justify-center pt-2 sm:pt-10">
-      <div className="mx-4 flex w-full max-w-[800px] flex-wrap items-center justify-center gap-4 rounded-lg border border-accentDarker bg-neutral-900 px-6 py-2 text-neutral-300">
+      <div className="mx-4 flex w-full max-w-[800px] flex-wrap items-center justify-center gap-4 rounded-lg border border-accentDarker bg-neutral-900 px-6 py-2 text-neutral-300 sm:gap-6 sm:py-4">
         <div className="flex items-center">
           <FaDiscord size={20} className="mr-2" />
           <span className="font-bold">Discord Bit-Scripts</span>
