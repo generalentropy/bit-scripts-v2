@@ -14,6 +14,7 @@ i18n
           baseline: "Software & Script Development",
           discord: "Join our Discord",
           devby: "Developed by",
+          online: "Members Online",
         },
       },
       fr: {
@@ -22,6 +23,7 @@ i18n
           baseline: "Développement de softs & scripts",
           discord: "Rejoignez notre Discord",
           devby: "Developpé par",
+          online: "Membres en ligne",
         },
       },
 
@@ -31,6 +33,7 @@ i18n
           baseline: "Desarrollo de software y scripts",
           discord: "Únete a nuestro Discord",
           devby: "Desarrollado por",
+          online: "Miembros en línea",
         },
       },
     },

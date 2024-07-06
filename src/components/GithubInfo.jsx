@@ -3,10 +3,10 @@ import useProjectInfo from "../../hooks/useProjectInfo";
 import { convertDate } from "../../utils/helpers";
 
 export function GithubInfo({ githubRepoName }) {
-  const { reposData } = useGlobalContext();
+  const { reposData, loading } = useGlobalContext();
   const projectInfo = useProjectInfo(reposData, githubRepoName);
 
-  if (!projectInfo) return null;
+  if (loading || !projectInfo || !reposData) return null;
 
   const baseStyle =
     "mt-4 flex flex-col items-center rounded  px-3 py-1 text-xs font-semibold text-neutral-200";

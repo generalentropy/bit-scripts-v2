@@ -6,9 +6,9 @@ export const GlobalContext = createContext();
 
 const GlobalProvider = ({ children }) => {
   const [reposData, setReposData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Pour éviter de multiples refetch pendant le dev (github api rate limit)
     if (!reposData) {
       fetchReposData(ORGNAME)
         .then((res) => {
@@ -21,6 +21,9 @@ const GlobalProvider = ({ children }) => {
         })
         .catch((error) => {
           console.log(error);
+        })
+        .finally(() => {
+          setLoading(false);
         });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -30,6 +33,8 @@ const GlobalProvider = ({ children }) => {
     <GlobalContext.Provider
       value={{
         reposData,
+        loading,
+        setLoading,
         setReposData,
       }}
     >

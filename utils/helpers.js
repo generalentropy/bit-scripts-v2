@@ -20,29 +20,6 @@ export const fetchReposData = async (orgName) => {
   }
 };
 
-export const getDiscordGuildInfo = async (guildId) => {
-  if (!guildId) {
-    console.error("Un ID de guilde est nécessaire");
-    return null;
-  }
-  try {
-    const response = await fetch(
-      `https://discord.com/api/v10/guilds/${guildId}/widget.json`,
-    );
-
-    if (!response.ok) {
-      throw new Error(`Error: ${response.status} ${response.statusText}`);
-    }
-
-    const channelInfo = await response.json();
-    console.log(channelInfo);
-    return channelInfo;
-  } catch (error) {
-    console.error("Fetch error:", error);
-    return null;
-  }
-};
-
 export const getDicordInviteInfo = async (inviteCode) => {
   if (!inviteCode) {
     console.error("Un code d'invitation est nécessaire");
