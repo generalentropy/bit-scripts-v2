@@ -3,8 +3,10 @@ import { Avatar, AvatarGroup } from "@chakra-ui/react";
 import { FaDiscord } from "react-icons/fa";
 import useDiscordInfo from "../../hooks/useDiscordInfo";
 import { GUILDID } from "../../config/globals";
+import { useTranslation } from "react-i18next";
 
 function DiscordWidget() {
+  const { t } = useTranslation();
   const { infos } = useDiscordInfo(GUILDID);
   const membersOnline = infos?.members ?? [];
   const presenceCount = infos?.presence_count ?? "🙈";
@@ -20,8 +22,10 @@ function DiscordWidget() {
         </div>
 
         <div className="flex items-center">
-          <MdOnlinePrediction size={22} className="mr-2" />
-          <span className="font-bold">Members Online : {presenceCount}</span>
+          <MdOnlinePrediction size={22} className="mr-2 align-baseline" />
+          <span className="font-bold">
+            {t("online")} : {presenceCount}
+          </span>
         </div>
 
         <AvatarGroup size="sm" max={7} textColor="black">
