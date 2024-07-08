@@ -30,7 +30,12 @@ function DiscordWidget() {
 
         <AvatarGroup size="sm" max={7} textColor="black">
           {membersOnline.map((member, i) => (
-            <Avatar name={member.username} src={member.avatar_url} key={i} />
+            <Avatar
+              name={member.username}
+              src={member.avatar_url}
+              key={i}
+              bg="gray.50"
+            />
           ))}
         </AvatarGroup>
       </div>
