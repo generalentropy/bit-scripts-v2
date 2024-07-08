@@ -38,14 +38,14 @@ i18n
       },
     },
     fallbackLng: "en",
-    debug: true,
+    debug: false,
     interpolation: {
       escapeValue: false,
     },
   });
 
 function fillTranslations(cardsData) {
-  console.log("Populate translations object...");
+  // console.log("Populate translations object...");
   cardsData.forEach((card) => {
     card.translations.forEach((translation) => {
       const { lang, description } = translation;
@@ -65,8 +65,6 @@ function fillTranslations(cardsData) {
 }
 
 fillTranslations(cardsData);
-console.log("Translations injected👍");
-
-// console.log(i18n.getResourceBundle("en", "app.card"));
+// console.log("Translations injected👍");
 
 export default i18n;

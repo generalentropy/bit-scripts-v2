@@ -13,7 +13,6 @@ export const fetchReposData = async (orgName) => {
       throw new Error(`Error: ${response.status} ${response.statusText}`);
     }
     const repos = await response.json();
-    console.log(repos);
     return repos;
   } catch (error) {
     console.error("Fetch error:", error);

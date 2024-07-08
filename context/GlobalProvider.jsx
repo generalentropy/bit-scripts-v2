@@ -14,7 +14,6 @@ const GlobalProvider = ({ children }) => {
         .then((res) => {
           if (res) {
             setReposData(res);
-            console.log("Repo data fetched");
           } else {
             setReposData(null);
           }
