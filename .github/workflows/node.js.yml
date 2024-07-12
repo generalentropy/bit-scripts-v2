@@ -35,6 +35,7 @@ jobs:
       run: |
         git config --global user.email "paulwoisard@gmail.com"
         git config --global user.name "Paul WOISARD"
+        git config --global --list
 
     - name: Deploy to GitHub Pages
       if: success()  # Déploie uniquement si les étapes précédentes réussissent
