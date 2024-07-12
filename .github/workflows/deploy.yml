@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - "master" # change to the branch you wish to deploy from
+      - "master"
 
 permissions:
   contents: read
@@ -20,7 +20,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '20.15.0' # change to the version you wish to use
+        node-version: '20.15.0'
 
     - run: npm ci
 
@@ -34,5 +34,5 @@ jobs:
     - id: build-publish
       uses: bitovi/github-actions-react-to-github-pages@v1.2.4
       with:
-        path: dist # change to your build folder (dist for Vite)
+        path: dist
 
