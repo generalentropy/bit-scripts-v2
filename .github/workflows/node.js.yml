@@ -27,5 +27,5 @@ jobs:
     - run: npm ci
 
     - run: npm run predeploy
-    - run: npm deploy
+    - run: npm run deploy
     
