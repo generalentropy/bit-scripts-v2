@@ -28,7 +28,7 @@ export const cardsData = [
     imageCover: "marv.jpg",
     title: "Marv",
     author: "Paul",
-    github: "",
+    github: "https://github.com/Bit-Scripts/Marv",
     demo: "https://discord.com/channels/1039788044691181608/1080108476069593138",
     translations: [
       {
