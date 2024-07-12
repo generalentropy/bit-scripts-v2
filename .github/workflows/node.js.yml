@@ -26,6 +26,13 @@ jobs:
 
     - run: npm ci
 
-    - run: npm run predeploy
-    - run: npm run deploy
-    
+    - run: npm run build --if-present
+
+    - name: Verify build directory
+      run: ls -la ./dist  # Vérifie que le répertoire build existe et affiche son contenu
+
+    - name: Deploy to GitHub Pages
+      if: success()  # Déploie uniquement si les étapes précédentes réussissent
+      run: npm run deploy  # Exécute le script de déploiement
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Utilise le token GitHub pour l'authentification   
