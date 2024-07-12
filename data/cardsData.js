@@ -29,7 +29,7 @@ export const cardsData = [
     title: "Marv",
     author: "Paul",
     github: "",
-    demo: "https://marv-bot.fr",
+    demo: "https://discord.com/channels/1039788044691181608/1080108476069593138",
     translations: [
       {
         lang: "en",
