@@ -49,6 +49,32 @@ export const cardsData = [
     ],
   },
   {
+    githubRepoName: "MarvWeb",
+    project: "marvWeb",
+    imageCover: "botavatar-bouche.png",
+    title: "Marv Bot",
+    author: "Paul",
+    github: "https://github.com/Bit-Scripts/MarvWeb",
+    demo: "https://marv-bot.fr",
+    translations: [
+      {
+        lang: "en",
+        description:
+          "A website that takes the concept of Marv but directly on the Web to make it accessible to everyone.",
+      },
+      {
+        lang: "fr",
+        description:
+          "Un site web qui reprend le concept de Marv mais directement sur le Web pour le rendre accessible à tout le monde.",
+      },
+      {
+        lang: "es",
+        description:
+          "Un sitio web que retoma el concepto de Marv pero directamente en la Web para hacerlo accesible a todos.",
+      },
+    ],
+  },
+  {
     githubRepoName: "Matrix",
     project: "matrix",
     imageCover: "matrix.jpg",
@@ -79,7 +105,7 @@ export const cardsData = [
     project: "bitguardian",
     imageCover: "bitguardian.jpg",
     title: "BitGuardian",
-    author: "Moon",
+    author: "Red Moon",
     github: "https://github.com/Bit-Scripts/BitGuardian",
     demo: "",
     translations: [
