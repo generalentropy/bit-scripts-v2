@@ -164,17 +164,69 @@ export const cardsData = [
       {
         lang: "en",
         description:
-          "Knowing the places where fuel prices are the cheapest (using government data) and sending SMS alerts if fuel prices drop",
+          "Knowing the places where fuel prices are the cheapest (using government data) and sending SMS alerts if fuel prices drop.",
       },
       {
         lang: "fr",
         description:
-          "Connaître les lieux où les prix des carburants sont les moins chers (utilisation des données gouvernementales) et envoi de SMS si le prix du carburant baisse",
+          "Connaître les lieux où les prix des carburants sont les moins chers (utilisation des données gouvernementales) et envoi de SMS si le prix du carburant baisse.",
       },
       {
         lang: "es",
         description:
-          "Conocer los lugares donde los precios de los combustibles son los más baratos (utilizando datos del gobierno) y enviar alertas por SMS si los precios de los combustibles bajan",
+          "Conocer los lugares donde los precios de los combustibles son los más baratos (utilizando datos del gobierno) y enviar alertas por SMS si los precios de los combustibles bajan.",
+      },
+    ],
+  },
+  {
+    githubRepoName: "MPRIS-Discord-Presence",
+    project: "mprisDiscordPresence",
+    imageCover: "MPRIS.png",
+    title: "MPRIS Discord Presence",
+    author: "Paul",
+    github: "https://github.com/Bit-Scripts/MPRIS-Discord-Presence",
+    demo: "",
+    translations: [
+      {
+        lang: "en",
+        description:
+          "MPRIS Discord Presence allows you to share the media being listened to/watched from a Linux system, compatible with MPRIS, on Discord.",
+      },
+      {
+        lang: "fr",
+        description:
+          "MPRIS Discord Presence permet de partager le média écouté/vu depuis un système Linux, compatible avec MPRIS, sur Discord.",
+      },
+      {
+        lang: "es",
+        description:
+          "MPRIS Discord Presence te permite compartir el medio que se está escuchando/viendo desde un sistema Linux, compatible con MPRIS, en Discord.",
+      },
+    ],
+  },
+  {
+    githubRepoName: "musique",
+    project: "musique",
+    imageCover: "musique.png",
+    title: "Musique - Le Lecteur Audio",
+    author: "Paul",
+    github: "https://github.com/Bit-Scripts/musique",
+    demo: "",
+    translations: [
+      {
+        lang: "en",
+        description:
+          "Musique, the audio player from BIT-SCRIPTS, supports MP3, WAVE, OGG, and FLAC formats. Easy to use and efficient, it is ideal for managing and enjoying your music collection. Developed in Python, Music combines performance and simplicity for all music lovers.",
+      },
+      {
+        lang: "fr",
+        description:
+          "Musique, le lecteur audio de BIT-SCRIPTS, supporte les formats MP3, WAVE, OGG et FLAC. Facile à utiliser et efficace, il est idéal pour gérer et apprécier votre collection musicale. Développé en Python, Musique combine performance et simplicité pour tous les amateurs de musique.",
+      },
+      {
+        lang: "es",
+        description:
+          "Musique, el reproductor de audio de BIT-SCRIPTS, soporta los formatos MP3, WAVE, OGG y FLAC. Fácil de usar y eficiente, es ideal para gestionar y disfrutar de tu colección musical. Desarrollado en Python, Música combina rendimiento y simplicidad para todos los amantes de la música.",
       },
     ],
   },
@@ -201,6 +253,32 @@ export const cardsData = [
         lang: "es",
         description:
           "Rsscript es un proyecto de código abierto de un bot de Discord cuyo objetivo es leer los feeds RSS y transmitirlos en un canal de Discord específico.",
+      },
+    ],
+  },
+  {
+    githubRepoName: "APPIPTV_Freebox_et_HDHomeRun",
+    project: "iptv",
+    imageCover: "IPTV.png",
+    title: "APPIPTV Freebox et HDHomeRun",
+    author: "Paul",
+    github: "https://github.com/Bit-Scripts/APPIPTV_Freebox_et_HDHomeRun",
+    demo: "",
+    translations: [
+      {
+        lang: "en",
+        description:
+          "IPTVAPP is an IPTV streaming application with a graphical user interface based on PyQt6, allowing you to watch TV programs via Freebox or an HDHomeRun live through VLC media player.",
+      },
+      {
+        lang: "fr",
+        description:
+          "IPTVAPP est une application de streaming IPTV avec une interface utilisateur graphique basée sur PyQt6, permettant de visualiser des programmes TV via Freebox ou un HDHomeRun en direct via VLC media player.",
+      },
+      {
+        lang: "es",
+        description:
+          "IPTVAPP es una aplicación de streaming IPTV con una interfaz gráfica de usuario basada en PyQt6, que permite ver programas de TV a través de Freebox o un HDHomeRun en directo mediante el reproductor VLC media player.",
       },
     ],
   },
