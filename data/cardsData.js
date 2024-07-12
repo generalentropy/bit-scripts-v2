@@ -127,6 +127,32 @@ export const cardsData = [
     ],
   },
   {
+    githubRepoName: "SnakeGame",
+    project: "snake",
+    imageCover: "snake_screenshot.png",
+    title: "Snake Game",
+    author: "Paul",
+    github: "https://github.com/Bit-Scripts/SnakeGame",
+    demo: "https://jeu-du-serpent.marv-bot.fr/",
+    translations: [
+      {
+        lang: "en",
+        description:
+          "Snake Game is a game where the player controls a snake seeking to eat apples. Generated with OpenAI's ChatGPT AI via the Marv Discord bot, it offers an enhanced experience while remaining classic.",
+      },
+      {
+        lang: "fr",
+        description:
+          "Snake Game est un jeu où le joueur dirige un serpent cherchant à manger des pommes. Généré avec l'IA ChatGPT d'OpenAI via le bot Discord Marv, il offre une expérience améliorée tout en restant classique.",
+      },
+      {
+        lang: "es",
+        description:
+          "Snake Game es un juego en el que el jugador controla una serpiente que busca comer manzanas. Generado con la IA ChatGPT de OpenAI a través del bot de Discord Marv, ofrece una experiencia mejorada mientras mantiene su carácter clásico.",
+      },
+    ],
+  },
+  {
     githubRepoName: "Low-Fuel",
     project: "lowfuel",
     imageCover: "lowfuel.jpg",
