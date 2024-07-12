@@ -31,6 +31,11 @@ jobs:
     - name: Verify build directory
       run: ls -la ./dist  # Vérifie que le répertoire build existe et affiche son contenu
 
+    - name: Setup Git
+      run: |
+        git config --global user.email "paulwoisard@gmail.com"
+        git config --global user.name "Paullux"
+
     - name: Deploy to GitHub Pages
       if: success()  # Déploie uniquement si les étapes précédentes réussissent
       run: npm run deploy  # Exécute le script de déploiement
