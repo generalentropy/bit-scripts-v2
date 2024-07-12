@@ -1,3 +1,5 @@
+name: Deploy to GitHub Pages
+
 on:
   push:
     branches:
@@ -12,7 +14,25 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20.15.0' # change to the version you wish to use
+
+    - run: npm ci
+
+    - run: npm run build
+
+    - name: Configure Git
+      run: |
+        git config --global user.email "paulwoisard@gmail.com"
+        git config --global user.name "Paul WOISARD"
+
     - id: build-publish
       uses: bitovi/github-actions-react-to-github-pages@v1.2.4
       with:
-        path: dist # change to your build folder
+        path: dist # change to your build folder (dist for Vite)
+
