@@ -51,7 +51,7 @@ export const cardsData = [
   {
     githubRepoName: "MarvWeb",
     project: "marvWeb",
-    imageCover: "botavatar-bouche.png",
+    imageCover: "botavatar-bouche.webp",
     title: "Marv Bot",
     author: "Paul",
     github: "https://github.com/Bit-Scripts/MarvWeb",
