@@ -25,12 +25,6 @@ jobs:
     - run: npm ci
 
     - run: npm run build
-
-    - name: Configure Git
-      run: |
-        git config --global user.email "paulwoisard@gmail.com"
-        git config --global user.name "Paul WOISARD"
-
     - id: build-publish
       uses: bitovi/github-actions-react-to-github-pages@v1.2.4
       with:
