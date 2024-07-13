@@ -33,15 +33,15 @@ export const cardsData = [
     translations: [
       {
         lang: "en",
-        description: "The various projects of Bits-Scripts",
+        description: "The various projects of Bit-Scripts",
       },
       {
         lang: "fr",
-        description: "Porfolio des différents projets de Bits-Sripts",
+        description: "Porfolio des différents projets de Bit-Scripts",
       },
       {
         lang: "es",
-        description: "Los diferentes proyectos de Bits-Scripts",
+        description: "Los diferentes proyectos de Bit-Scripts",
       },
     ],
   },
