@@ -23,6 +23,29 @@
 
 export const cardsData = [
   {
+    githubRepoName: "Bit-Scripts.github.io",
+    project: "Bit-Scripts",
+    imageCover: "bitscriptsweb.jpeg",
+    title: "Bit-Scripts Portfolio",
+    author: "Eddy",
+    github: "https://github.com/Bit-Scripts/Bit-Scripts.github.io",
+    demo: "https://bit-scripts.github.io/",
+    translations: [
+      {
+        lang: "en",
+        description: "The various projects of Bits-Scripts",
+      },
+      {
+        lang: "fr",
+        description: "Porfolio des différents projets de Bits-Sripts",
+      },
+      {
+        lang: "es",
+        description: "Los diferentes proyectos de Bits-Scripts",
+      },
+    ],
+  },
+  {
     githubRepoName: "Marv",
     project: "marv",
     imageCover: "marv.jpg",
